@@ -49,7 +49,7 @@ input {
 }
 
 input:focus {
-    outline: none; /* Eliminar el borde de enfoque */
+    outline: none; 
 }
 
 .num-tareas {
