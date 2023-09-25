@@ -2,6 +2,8 @@ body {
     font-family: 'Raleway', sans-serif;
     margin-top: 100px;
     width: 100%;
+    background-color: rgb(242, 243, 243);
+    font-size: x-large;
     
 }
 
@@ -9,7 +11,12 @@ ul li {
     border: 1px solid grey;
     list-style: none;
     padding: 5px;
-    grid-template-columns: 1fr auto;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 30px;
+    background-color: white;
+    box-shadow: 1px 0px 17px -1px rgba(0,0,0,0.30);
 }
 
 ul {
@@ -39,5 +46,16 @@ input {
 
 .container {
     max-width: 400px; 
+}
+
+input:focus {
+    outline: none; /* Eliminar el borde de enfoque */
+}
+
+.num-tareas {
+    padding: 0;
+    padding-left: 10px;
+    font-size: large;
+    color: grey;
 }
 

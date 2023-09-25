@@ -15,7 +15,7 @@ const Home = () => {
 			<ul>
 				<li>
 					<input type="text"
-						placeholder="What do you need to do?"
+						placeholder="Que tienes que hacer?"
 						onChange={(e) => setInputValue(e.target.value)}
 						value={inputValue}
 						onKeyPress={(e) => {
@@ -30,8 +30,10 @@ const Home = () => {
 					className="red-mark" onClick={() => setTodos(todos.filter((t, currentIndex) => index != currentIndex))} /> </li>
 				))}
 
+              <li className="num-tareas">{todos.length} tareas pendientes</li>
+
 			</ul>
-			<div>{todos.length} item left</div>
+			
 		</div>
 	);
 };
